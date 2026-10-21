@@ -12,20 +12,23 @@ const linkClass = ({ isActive }) =>
       : "text-slate-700 hover:bg-slate-100 hover:text-blue-700" // Ubah warna di baris ini
   }`;
 
+// 1. Tambahkan baris import ini di bagian paling atas file (di bawah import React/NavLink)
+// Asumsi: File Header.jsx berada di dalam folder src/components/
+import logoBTSI from './img/BTSI_logo.png'; 
+
 function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-black/10 bg-white/70 text-navy backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <NavLink to="/" className="flex items-center gap-2 text-lg font-extrabold">
           
-          {/* Tag <svg> dihapus dan diganti dengan <img> di bawah ini */}
+          {/* 2. Ubah isi atribut src dengan nama variabel tanpa tanda kutip */}
           <img 
-            src="src/components/img/BTSI_logo.png" 
+            src={logoBTSI} 
             alt="Logo BTSI" 
             className="h-8 w-auto" 
           />
           
-         
         </NavLink>
         <nav className="flex gap-1" aria-label="Navigasi utama">
           <NavLink to="/" end className={linkClass}>Home</NavLink>
