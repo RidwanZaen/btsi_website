@@ -13,7 +13,8 @@ const linkClass = ({ isActive }) =>
   }`;
 
 // 1. Ubah path import karena gambar sekarang sejajar dengan App.jsx di dalam folder src
-import logoBTSI from './BTSI_logo.png'; 
+// Tambahkan kata /assets/ pada jalurnya
+import logoBTSI from './BTSI_logo.png';
 
 function Header() {
   return (
