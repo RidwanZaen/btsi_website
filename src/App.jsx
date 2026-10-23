@@ -13,7 +13,7 @@ const linkClass = ({ isActive }) =>
   }`;
 
 // 1. Ubah path import mengarah ke folder assets
-import logoBTSI from './assets/BTSI_logo.png'; 
+import logoBTSI from 'BTSI_logo.png'; 
 
 function Header() {
   return (
