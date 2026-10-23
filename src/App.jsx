@@ -8,13 +8,12 @@ import { COMPANY } from "./data/content";
 const linkClass = ({ isActive }) =>
   `rounded-full px-4 py-2 text-sm font-semibold transition ${
     isActive 
-      ? "bg-teal text-navy" // Warna saat menu diklik/aktif (Background Teal, Teks Navy)
-      : "text-slate-700 hover:bg-slate-100 hover:text-blue-700" // Ubah warna di baris ini
+      ? "bg-teal text-navy" 
+      : "text-slate-700 hover:bg-slate-100 hover:text-blue-700" 
   }`;
 
-// 1. Tambahkan baris import ini di bagian paling atas file (di bawah import React/NavLink)
-// Asumsi: File Header.jsx berada di dalam folder src/components/
-import logoBTSI from './img/BTSI_logo.png'; 
+// 1. Ubah path import mengarah ke folder assets
+import logoBTSI from './assets/BTSI_logo.png'; 
 
 function Header() {
   return (
@@ -22,7 +21,7 @@ function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <NavLink to="/" className="flex items-center gap-2 text-lg font-extrabold">
           
-          {/* 2. Ubah isi atribut src dengan nama variabel tanpa tanda kutip */}
+          {/* 2. Logo dipanggil di sini */}
           <img 
             src={logoBTSI} 
             alt="Logo BTSI" 
