@@ -12,8 +12,8 @@ const linkClass = ({ isActive }) =>
       : "text-slate-700 hover:bg-slate-100 hover:text-blue-700" 
   }`;
 
-// 1. Ubah path import mengarah ke folder assets
-import logoBTSI from 'BTSI_logo.png'; 
+// 1. Ubah path import karena gambar sekarang sejajar dengan App.jsx di dalam folder src
+import logoBTSI from './BTSI_logo.png'; 
 
 function Header() {
   return (
